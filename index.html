@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/style.css">
+	<title>Homework</title>
+</head>
+<body>
+	<header>
+		<section>
+			<div id="done">
+				<p>Сделано <span id="done-num"></span></p>
+			</div>
+			<div id="cancelled">
+				<p>Отменено <span id="cancelled-num"></span></p>
+			</div>
+		</section>
+		<form>
+			<div>
+				<label>Добавить новое дело</label>
+				<input name="title" placeholder="Название" list="name-list">
+					<datalist id="name-list">
+						<option>кататься</option>
+						<option>поспать</option>
+						<option>поесть</option>
+					</datalist>
+				<input name="notes" placeholder="Пометки" list="notes-list">
+					<datalist id="notes-list">
+						<option>на велосипеде</option>
+					</datalist>
+				<button>добавить</button>
+			</div>
+		</form>
+	</header>
+	<section id="content">
+	</section>
+	<script src="scripts/script.js"></script>
+</body>
+</html>
